@@ -1,0 +1,168 @@
+body {
+        background: #d6d6c2;
+}
+h1 {
+        text-align: center;
+}
+
+h2 {
+        text-align: center;
+        font-family:monospace;
+}
+
+.parent {
+        border: 5px solid lightcoral;
+        margin-bottom: 100px;
+}
+
+.item {
+        margin: 5px;
+        background: DeepSkyBlue;
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        font-weight: 600;
+}
+
+/* display: flex */
+.example-flex .parent {
+        display: flex;
+}
+
+.example-flex .item {
+        width: 50px;
+}
+
+/* flex-direction: row-reverse */
+.example-direction .parent {
+        display: flex;
+        flex-direction: row-reverse;
+}
+
+.example-direction .item {
+        width: 50px;
+}
+
+/* flex-wrap */
+.example-wrap .parent {
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.example-wrap .item {
+        width: 30%;
+}
+
+/* justify-content */
+.example-justify .parent {
+        display: flex;
+        justify-content: center;
+}
+
+.example-justify .item {
+        width: 50px;
+}
+
+/* align-items */
+.example-align .parent {
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+}
+
+.example-align .item {
+        width: 50px;
+}
+
+/* align-content */
+.example-align-content .parent {
+        height: 200px;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+}
+
+.example-align-content .item {
+        width: 30%;
+}
+
+/* order */
+.example-order .parent {
+        display: flex;
+}
+
+.example-order .item {
+        width:  50px;
+}
+
+.example-order .item:nth-child(2) {
+        order: 1;
+        background: green;
+}
+
+/* flex-grow */
+.example-grow .parent {
+        display: flex;
+}
+
+.example-grow .item {
+        width: 50px;
+}
+
+.example-grow .item:nth-child(2) {
+        flex-grow: 2;
+        background: green;
+}
+.example-grow .item:nth-child(3) {
+        flex-grow: 3;
+        background: black;
+}
+
+/* flex-shrink */
+.example-shrink .parent {
+        display: flex;
+}
+
+.example-shrink .item {
+        width: 400px;
+}
+
+.example-shrink .item:nth-child(2) {
+        flex-shrink: 2;
+        background: green;
+}
+.example-shrink .item:nth-child(3) {
+        flex-shrink: 3;
+        background: black;
+}
+
+/* flex-basis */
+.example-basis .parent {
+        display: flex;
+        flex-direction: column;
+}
+
+.example-basis .item {
+        width: 400px;
+        height: 80px;
+}
+.example-basis .item:nth-child(2) {
+        flex-basis: 10px;
+        background: green;
+}
+
+/* align-self */
+.example-align-self .parent {
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+}
+
+.example-align-self .item {
+        width: 50px;
+        height: 50px;
+}
+.example-align-self .item:nth-child(2) {
+        align-self: flex-end;
+}
